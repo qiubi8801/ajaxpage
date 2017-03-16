@@ -1,6 +1,7 @@
 # ajaxPage
 a ajaxPage based on jquery
 
+```javascript
 $('#J_page').ajaxPage({
     "limit" : 10,
     "dataCount" : 300,
