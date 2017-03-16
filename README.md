@@ -1,6 +1,11 @@
 # ajaxPage
 a ajaxPage based on jquery
 
+###HTML结构
+```html
+<div id="J_page" class="ui-pagination"></div>
+
+###调用
 ```javascript
 $('#J_page').ajaxPage({
     "limit" : 10,       //每页要显示的数据条数(与 dataCount 搭配使用 不可与pageTotal共存，pageTotal优先级高)
