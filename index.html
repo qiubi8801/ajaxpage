@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>异步分页</title>
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+
+<body>
+    <div id="J_page" class="ui-pagination mt40"></div>
+</body>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.0.min.js"></script>
+<script src="./js/ajaxpage.js"></script>
+<script>
+    $(function(){
+        $('#J_page').ajaxPage({
+            "limit" : 10,
+            "dataCount" : 300,
+            "curNum" : 5,
+            "pageTotal" : 10,
+            "pageLen" : 5,
+            "isHaveSelect" : true,
+            "isHaveGoLink" : true,
+            "isHaveTotal" : true,
+            "onChange" : function(pageNun){
+                //console.log(pageNun);
+            }
+        })
+    });
+</script>
+</html>
